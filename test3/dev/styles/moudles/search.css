@@ -1,0 +1,65 @@
+.list-containter {
+  width: 100%; }
+  .list-containter ul li a {
+    width: 100%;
+    padding: .2rem .1rem;
+    display: flex; }
+    .list-containter ul li a > div {
+      display: flex; }
+    .list-containter ul li a .max-img {
+      width: 2.2rem;
+      height: 1rem;
+      margin-right: .1rem;
+      position: relative; }
+      .list-containter ul li a .max-img img {
+        width: 100%; }
+      .list-containter ul li a .max-img .head-img {
+        position: absolute;
+        left: .04rem;
+        top: .04rem; }
+        .list-containter ul li a .max-img .head-img img {
+          width: .2rem; }
+          .list-containter ul li a .max-img .head-img img:first-child {
+            margin-right: .01rem; }
+      .list-containter ul li a .max-img .foot-img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%; }
+    .list-containter ul li a .list-content {
+      display: flex;
+      flex-direction: column;
+      width: 100%; }
+      .list-containter ul li a .list-content h2 {
+        color: #444; }
+      .list-containter ul li a .list-content .price {
+        display: flex;
+        width: 100%;
+        line-height: .22rem; }
+        .list-containter ul li a .list-content .price .left {
+          width: 1rem;
+          vertical-align: middle;
+          color: #999;
+          font-size: 12px; }
+        .list-containter ul li a .list-content .price .right {
+          flex: 1;
+          text-align: right;
+          vertical-align: middle;
+          font-size: 16px;
+          color: #ffa000;
+          line-height: .3rem; }
+      .list-containter ul li a .list-content .loction {
+        color: #999;
+        font-size: 12px;
+        line-height: .2rem; }
+      .list-containter ul li a .list-content .tags {
+        margin-top: .08rem; }
+        .list-containter ul li a .list-content .tags img {
+          width: .48rem;
+          height: .20rem; }
+        .list-containter ul li a .list-content .tags .small-tag {
+          display: inline-block;
+          font-size: 10px;
+          border: 1px solid #999;
+          color: #999;
+          padding: 1px 6px; }

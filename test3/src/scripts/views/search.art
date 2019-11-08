@@ -1,0 +1,69 @@
+
+    <div class="top">
+        <a class="top-city">北京</a>      
+        <div class="search"><span class="yo-ico">&#xe610;</span> &nbsp;输入您想住的区域或小区</div>
+    </div>
+    <div class="search-list">
+        <div><span class="yo-ico">&#xe610;</span><input placeholder="您想住哪儿"><em class="search-detele">×</em><span class="search-cancel">取消</span></div>
+        <ul class="room-list">
+            
+        </ul>
+    </div>
+    <div class="city-list" style="display:none;">
+        <div class="city-close">×</div>
+        <ul>
+            <li data-id="110000">北京</li>
+            <li data-id="310000">上海</li>
+            <li data-id="440300">深圳</li>
+            <li data-id="330100">杭州</li>
+            <li data-id="320100">南京</li>
+            <li data-id="510100">成都</li>
+            <li data-id="420100">武汉</li>
+            <li data-id="440100">广州</li>
+            <li data-id="120000">天津</li>
+        </ul>
+    </div>
+    <div class="filter">
+        <ul id="choose-location" class="choose">
+            <li class="active">整租</li>
+            <li>位置</li>
+            <li>租金</li>
+            <li>筛选</li>
+            <li><span class="yo-ico">&#xe689;</span></li>
+        </ul>
+        <div class="choose-show">
+            <div>
+                <a data-code="11">整租</a>
+                <a data-code="6">合租</a>
+            </div>
+            <div style="pointer-events: auto;">
+                <a data-to="" class="now">不限</a>
+                <a data-to="23008614" >东城</a>
+                <a data-to="23008626">西城</a>
+                <a data-to="23008613" >朝阳</a>
+                <a data-to="23008618" >海淀</a>
+                <a data-to="23008617">丰台</a>
+                <a data-to="23008623">石景山</a>
+                <a data-to="23008625">通州</a>
+                <a data-to="23008611">昌平</a>
+                <a data-to="23008615">大兴</a>
+            </div>              
+
+            <div>
+                <a data-id="" class="now">不限</a>
+                <a data-id="0,5000" >0~5000</a>
+                <a data-id="5000,6000">5000~6000</a>
+                <a data-id="6000" >6000元以上</a>
+            </div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul id="look" class="look">
+            <li data-v="3" class="look-img"><img src="https://image.ziroom.com/g2m1/M00/42/74/ChAFBlvW2MyAT-8EAAAhGkFxCa0551.png" class="full-img-tag"></li>
+            <li data-v="12">非首次出租</li>
+            <li data-v="17">VR看房</li>
+            <li data-v="10">视频看房</li>
+        </ul>
+    </div>
+    
+

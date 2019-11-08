@@ -1,0 +1,103 @@
+<div class="ziru-head">
+    <div class="city">自如</div>
+    <div class="head-search">输入您想住的区域或小区</div>
+</div>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">
+            <a href="https://special.ziroom.com/2018/tpl201810/index.html?id=4232">
+                <img src="http://image.ziroom.com/g2m1/M00/3C/F5/ChAFBlwktxyAZ02ZAAIWPB3AMhU299.jpg">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="https://hd.ziroom.com/2019new/zz_season2/index.html?utm_source=ziyuanwei&amp;city_code=110000">
+                <img src="http://image.ziroom.com/g2m2/M00/7C/EC/CtgFCV16BG6AQx64AALfbzJM9X0138.jpg">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="https://hd.ziroom.com/2019/haiyan/index.html">
+                <img src="http://image.ziroom.com/g2m2/M00/73/B4/CtgFCF0QRLCAdTcZAAH2VpnxJuM033.jpg">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="https://hd.ziroom.com/2019/zrk_laodaixin/index.html?channelCode=M&amp;utm_source=HYTJBJ006">
+                <img src="http://image.ziroom.com/g2m2/M00/05/96/CtgFCVyBwd2AO5VhAABY_zZe3r8409.png">
+            </a>
+        </div>
+        <div class="swiper-slide">
+            <a href="https://special.ziroom.com/2019/working_map/index.html">
+                <img src="http://image.ziroom.com/g2m2/M00/EF/45/CtgFCFz3OBWAYMIMAAN2tAN4ZtE566.jpg">
+            </a>
+        </div>
+
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>        
+</div>
+
+<div class="ad">
+    <span><img src="http://static8.ziroom.com/phoenix/msite/2016/img/zrLogoSmall.png"></span>
+    下载自如APP，立即签约空气质检品质好房
+</div>
+
+<li class="index-list">
+    <div class="list-title">
+        <h2>自如友家</h2>
+        <span>查看更多</span>
+    </div>    
+    <img src="http://img.ziroom.com/house_images/g2m1/M00/38/4E/ChAFBlx6VtmAC5uOAAHnG8_3Pl4707.jpg_C_600_400_Q80.jpg">
+    <h3><span>¥3290/月 </span>金蝉北里2居室-南卧</h3>
+    <p>[朝阳区欢乐谷] 7号线 欢乐谷景区</p>
+</li>
+<li class="index-list">
+    <div class="list-title">
+        <h2>自如整租</h2>
+        <span>查看更多</span>
+    </div>    
+    <img src="http://img.ziroom.com/house_images/g2m2/M00/0D/90/CtgFCF1hI0OAc4PYAA7ieFmK1SA377.JPG_C_600_400_Q80.jpg">
+    <h3><span>¥3290/月 </span>金蝉北里2居室-南卧</h3>
+    <p>[朝阳区欢乐谷] 7号线 欢乐谷景区</p>
+</li>
+<li class="index-list">
+    <div class="list-title">
+        <h2>自如友家</h2>
+        <span>查看更多</span>
+    </div>    
+    <img src="http://img.ziroom.com/house_images/g2m1/M00/38/4E/ChAFBlx6VtmAC5uOAAHnG8_3Pl4707.jpg_C_600_400_Q80.jpg">
+    <h3><span>¥6690/月 </span>万年花城五期1居室-南</h3>
+    <p>[丰台区玉泉营] 10号线 首经贸</p>
+</li>
+<li class="index-list">
+    <div class="list-title">
+        <h2>自如寓</h2>
+        <span>查看更多</span>
+    </div>    
+    <img src="http://image.ziroom.com/g2m2/M00/73/C4/CtgFCFycmteAJDbYAAKMMQqtt3c839.jpg">
+    <h3>北京将府全智能自如寓</h3>
+    <p>自如首栋全智能公寓</p>
+</li>
+<li class="index-list">
+    <div class="list-title">
+        <h2>自如民宿</h2>
+        <span>查看更多</span>
+    </div>    
+</li>
+<li class="index-list">
+    <div class="list-title">
+        <h2>自如驿</h2>
+        <span>查看更多</span>
+    </div>    
+    <img src="http://image.ziroom.com/g2/M00/50/CD/ChAFEVjnSmOAIng4AAL5oGY3sgk492.jpg">
+    <h3><span>99元/晚起 </span>北京CBD自如驿</h3>
+    <p>我们一起看世界</p>
+</li>
+<li class="index-list">
+    <div class="list-title">
+        <h2>自如服务</h2>
+        <span>查看更多</span>
+    </div>    
+    <img src="//static8.ziroom.com/phoenix/msite/2016/img/banjia.jpg">     
+</li>
+<div class="logo">
+    <img src="//static8.ziroom.com/phoenix/msite/2016/img/logo.png">
+</div>

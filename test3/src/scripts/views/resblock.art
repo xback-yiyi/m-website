@@ -1,0 +1,47 @@
+<div class="resblock-banner">
+    <span class="yo-ico">&#xe64c;</span>
+</div>
+<h2 class="resblock-name">{{result.data.resblock_name}}</h2>
+<p class="resblock-location">{{result.data.subway_primary}}</p>
+<h3>小区介绍</h3>
+<ul class="resblock-introduce detail-problem">
+    {{each result.data.intro.data}}
+    <li><p>{{$value.title}}</p><em class="show-popup">{{$value.desc}}</em></li>
+    {{/each}}
+</ul>
+<h3>在租房源</h3>
+<ul class="resblock-list">
+    {{each result.data.rooms}}
+    <li class="list-item">
+        <div class="max-img">
+                <img src="{{$value.photo}}">
+                <div class="foot-img">
+                    <img src="{{$value.first_photo_style}}">
+                </div>
+            </div>
+            <div class="list-content">
+                <h2>{{$value.type_text}}·{{$value.name}}</h2>
+                <div class="price">
+                    <span class="left">{{$value.area_order}}m<sup>2</sup> | {{$value.floor}}/{{$value.floor_total}}层</span>
+                    <div class="right">{{$value.price}}{{$value.price_unit}}</div>
+                    </div>
+                <p class="loction">{{$value.subway_station_info}}</p>
+                <div class="tags">
+                {{each $value.tags}}
+                {{if($value.bg_img)}}<img src="{{$value.bg_img}}">{{/if}}
+                {{if(!$value.bg_img)}}<span class="small-tag">{{$value.title}}</span>{{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</ul>
+<h3>周边及交通</h3>
+<div class="detail-around">
+    <img src="http://api.map.baidu.com/staticimage/v2?ak=CB9b776692623d30a148b5c5dc2b75a6&mcode=666666&center={{result.data.lng}},{{result.data.lat}}&width=800&height=360&zoom=18&markers=116.374708,39.854229&markerStyles=-1,http://api.map.baidu.com/images/marker_red.png,-1,23,25">
+    <ul class="traffic">
+        {{each result.data.subway}}
+        <li>· {{$value}}</li>
+        {{/each}}
+    </ul>
+</div>

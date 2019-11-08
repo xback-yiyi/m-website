@@ -1,0 +1,16 @@
+<div class="my-login">
+    <div class="login-on active">登录</div>
+    <div class="login-in">注册</div>
+</div>
+<div class="my-text1 my-show">
+    <input class="login-phone" type="text" placeholder="请输入账号"> 
+    <input class="login-password" type="password" placeholder="请输入密码"> 
+    <span class="my-submit">确定</span>
+</div>
+<div class="my-text2">
+    <input class="my-phone" type="text" placeholder="请输入手机号">
+    <input class="my-name" type="text" placeholder="请输入昵称"> 
+    <input class="my-password" type="password" placeholder="请输入密码"> 
+    <p>密码强度: <em></em></p>    
+    <span class="my-submit">确定</span>
+</div>

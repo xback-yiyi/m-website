@@ -1,0 +1,94 @@
+body {
+  background: #fff; }
+
+.indexContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .indexContainer header {
+    height: 1.26rem;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column; }
+    .indexContainer header > div {
+      display: flex; }
+    .indexContainer header .top {
+      height: .3rem;
+      margin-top: .08rem; }
+      .indexContainer header .top .back {
+        display: flex;
+        width: .4rem;
+        text-align: center;
+        line-height: .3rem;
+        font-size: 18px;
+        color: #000;
+        padding: 0 .1rem; }
+      .indexContainer header .top .search {
+        display: flex;
+        height: .3rem;
+        border-radius: 25px;
+        line-height: .35rem;
+        flex: 1;
+        background-color: #f5f5f5;
+        color: #999;
+        padding-left: .08rem;
+        font-size: 14px; }
+    .indexContainer header .filter {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      font-size: 12px; }
+      .indexContainer header .filter .active {
+        color: #ffa000; }
+      .indexContainer header .filter .choose {
+        display: flex;
+        width: 100%;
+        height: .44rem; }
+        .indexContainer header .filter .choose li {
+          flex: 1;
+          text-align: center;
+          line-height: .44rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-around; }
+      .indexContainer header .filter .look {
+        display: flex;
+        height: .3rem; }
+        .indexContainer header .filter .look li {
+          flex-shrink: 0;
+          border-radius: 15px;
+          background-color: rgba(0, 0, 0, 0.03);
+          padding: .05rem .1rem;
+          margin-right: .07rem;
+          font-size: 12px;
+          height: .3rem;
+          line-height: .28rem;
+          color: rgba(0, 0, 0, 0.4); }
+        .indexContainer header .filter .look .look-img {
+          padding: 0; }
+        .indexContainer header .filter .look .full-img-tag {
+          width: .9rem; }
+    .indexContainer header .yo-ico {
+      color: #666;
+      font-weight: bolder; }
+  .indexContainer main {
+    flex: 1;
+    overflow: hidden; }
+  .indexContainer footer {
+    height: .44rem; }
+    .indexContainer footer ul {
+      height: 100%;
+      display: flex; }
+      .indexContainer footer ul li {
+        flex: 1;
+        background: rgba(0, 0, 0, 0);
+        text-align: center;
+        line-height: .44rem;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #666; }
+    .indexContainer footer .active {
+      color: #FF961E;
+      background: rgba(255, 255, 255, 0); }

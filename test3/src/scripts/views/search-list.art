@@ -1,0 +1,36 @@
+
+    {{each list}}
+    <li class="list-item" data-id="{{$value.id}}">
+        <a>
+            <div class="max-img">
+                <img src="{{$value.photo}}">
+                <div class="head-img">
+                    <img src="data:image/png;base64,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"> 
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAYAAACMRWrdAAAAAXNSR0IArs4c6QAABM9JREFUaAXtWk1PE0EYVtCINYEC4sE0WkObxmjw4EEJB+NFg/oDiAk3b8YgX/FA4B/AEfgBxCPh0EC9WOQAieBBOZEiEUVjUqjGaMEP0OfBdNKdnd3u7mxLITzJE6azM++8z868M7MzHDlyiMM3UBZv4GgRvDgGmyHwLBgEq8ET4HGQ+A3+BL+BX8FP4Br4B/QNfgmj42HwPEhRFOcGFEVxq+A7kMK1oCuMAprAK2CuR7QcQmX26GvwDei5F70Kq0CjMfAqGACLgSyMvgKXwB23DXgRdgqN3AZPu23MY/l11HsG/nBTv9JNYZQ9A94Da1zW0ynOEREBP4OOxbkRFoXhWyAnilKD8cv2v4MZJ407FUajN0HG1l6BbV8AuUwUFOdEGIcfe2ovRaF5gXNIfQRth2UhYZwoGFN7MfzQrBJ8wRT3FuTSoISdMBoo9UShdFKRyZjjzoZLwV/Fc9vhxXWqVFO6yrdCefSNPiphFTfcUXDxLXfQR/pqgpUwbpOKtaMwOaGRQR/pqwkqYZwouPfbL6CvpslNJSyMggxOLcRisUBlpd3cpGU+vzJ9DednMK0Sxk8PLYyOjl6fm5t7srS09KirqyuqZcxZZZPPsjAGIr+ntNDc3HzpKFBfX9/Q39/fPj8/397a2tqgZdS+sukbUBZmKmBvT/20osJoNhKJRMfGxh7G4/E70Wj0pLqWVq6pQ4we/F/0tFqwqgyxFS0tLddnZmYej4yMXAsEAnLbVlWd5nPBFpCN84yiqKiqqjrZ1tZ2d3Fx8WFPT4+f8WfwXRZWXVRVecbr6uoa+vr62hcWFvyKP4PvsjDTepDnS1GSjY2Nu/E3OTl5VzP+DL7LwrTXLy/qGX+YSa8lEokHtbW1yi2SA7sG32VhDuoXr0gwGKyDRl8akN8Ov28MXepLKw6MZDKZ9ODgYHxjY8PrkZvh20wWxoPKkgrb2tranJiYeN7d3T2fzWZdH7PlvTP6LiAL43mCYXYRJX1O7ADYdr3s7OxMplKpTR/M03cBWRjP0rW3VMK6RWJ5eTk1MDCQmJqaSlsU8ZJN3wVkYbwguCye+pxA/KSHh4cTQ0NDKZ9N0xx9F5CFreEJg1fOFxW8JBBH2fHx8WRvb69uHFk1T5/pu4AsIFcgLEp4SKTT6S+hUOg8wmh7dnb2ZUdHx/TKyoofcWTlTa5DxHPV2X0MT2+IEh4SNTU1lfgOu5hMJj9NT09nPJhwW+UFKvDESkAljNP9fdCwkosa5Zfg+vUUNEz3qmWeBXg/tV9AXw2i6LhKGPN56cb7qXIHfaSvJlgJ4yTCS7dyB32kryZYCWNBBuO6qUb5ZNA3+qiE3fkYz8TfgxGw3CYSDsE4+AtUwk4YK3DG4U1iFLTrXTwuGbbR0hRo2ELJrRcSxvK8h+JN4gX+KANwzfpQyA8nwmiDiyx3z7yX2queY09RlKN9plNhsLcr7iP+UlypY44xxeFXsKdQZhduhLEChyVvEnmGV6rbGM5+nChsYwrPDVBtqQwFLH5wOHJPeaD+gSVfK78OmsAD8y9H+eKY5sY5DPLWIwTKn0PIskXuc2kVpd6Bpr2fbW3FQ69DUWFKZFEUxTEOgyDPUCg8N+FwbaTjnGUZN/zyXQOVWyPkH+LwDeznN/AP6e4IITq8BlwAAAAASUVORK5CYII=">
+                </div>
+                <div class="foot-img">
+                    <img src="{{$value.first_photo_style}}">
+                </div>
+            </div>
+            <div class="list-content">
+                <h2>{{$value.type_text}}·{{$value.name}}</h2>
+                <div class="price">
+                    <span class="left">{{$value.area_order}}m<sup>2</sup> | {{$value.floor}}/{{$value.floor_total}}层</span>
+                    <div class="right">
+                        <span style="background-image: url({{$value.price[0]}});background-size:auto .15rem;background-position: -1.8rem;"></span>
+                        <span style="background-image: url({{$value.price[0]}});background-size:auto .15rem;background-position: -2.1rem ;"></span>
+                        <span style="background-image: url({{$value.price[0]}});background-size:auto .15rem;background-position: -1.5rem ;"></span>
+                        <span style="background-image: url({{$value.price[0]}});background-size:auto .15rem;background-position: -.9rem ;"></span>
+                    {{$value.price_unit}}</div>
+                    </div>
+                <p class="loction">{{$value.subway_station_info}}</p>
+                <div class="tags">
+                {{each $value.tags}}
+                {{if($value.bg_img)}}<img src="{{$value.bg_img}}">{{/if}}
+                {{if(!$value.bg_img)}}<span class="small-tag"style="{{$value.style}}">{{$value.title}}</span>{{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </a>
+    </li>
+    {{/each}}

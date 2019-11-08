@@ -1,0 +1,13 @@
+{{each list3}}
+<li>
+    <span><img src="{{$value.icon}}"></span>
+    <div>
+        <h3>{{$value.name}}</h3>
+        <p>{{$value.memo}}</p>
+        {{if $value.housenum}}
+    <em>{{$value.housenum}}</em>
+    {{/if}}
+    </div>
+    
+</li>
+{{/each}}

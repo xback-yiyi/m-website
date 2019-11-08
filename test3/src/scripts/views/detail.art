@@ -1,0 +1,155 @@
+
+<div class="detail-banner">
+    <img src="{{result.data.focus_photos_big[0]}}">
+    <span class="yo-ico">&#xe64c;</span>
+</div>
+{{if result.data.page_top_banner}}
+<div class="detail-tag">
+    <img src="{{result.data.page_top_banner.img}}">
+    <div>{{result.data.page_top_banner.title}}</div>
+</div>
+{{/if}}
+<p class="detail-title"></p>
+<div class="detail-price"style="{{}}">
+    <span>￥6590</span>
+    <span>{{result.data.price_desc}}</span>
+    <span>{{result.data.price_unit}}</span>
+</div>
+<div class="detail-pay">
+    <span class="left">服务费另计，详情见付款方式</span>
+    <span class="right">付款方式</span>
+</div>
+<ul class="detail-activity">
+    {{if result.data.activity_list}}
+        {{each result.data.activity_list}}
+        <li><span>{{$value.name}}</span>{{$value.title}}</li>
+        {{/each}}
+    {{/if}}
+</ul>
+<div class="detail-qua">
+    {{if result.data.air_report}} 
+    <div>{{result.data.air_report.title}}<a>{{result.data.air_report.desc}}</a></div>
+    <div>{{result.data.decorate_config.title}}<em>{{result.data.decorate_config.desc}}</em></div>
+    {{/if}}
+</div>
+<div class="detail-tags">
+    {{each result.data.tags}}
+        {{if ($value.bg_img)}}<img src="{{$value.bg_img}}">{{/if}}
+        {{if !($value.bg_img)}}<span">{{$value.title}}</span>{{/if}}
+      {{/each}}
+</div>
+<div class="detail-size">
+    <span>{{result.data.area}}m²</span>
+    <span>{{result.data.bedroom}}室{{result.data.parlor}}厅</span>
+    <span>{{result.data.floor}}/{{result.data.floor_total}}层</span>
+    <span>{{result.data.face}}</span>
+</div>
+<p class="detail-long">{{result.data.location}}</p>
+<div class="detail-include">
+    <p>房源介绍</p>
+    <div>{{result.data.introduction}}
+        
+        <span><em>...</em>查看更多</span>
+    </div>
+    <img src="{{result.data.page_middle_banner.img}}">
+</div>
+<div class="detail-area">
+    <p>户型配套</p>
+    <img src="{{result.data.hx_photos_min_webp[0]}}">
+</div>
+<div  id="room" class="detail-room">
+    <ul class="room-name">
+        {{each result.data.space}}
+        <li><a>{{$value.name}}</a></li>
+        {{/each}}
+    </ul> 
+    {{each result.data.space}}
+    <p><span>面积 · {{$value.area}}㎡</span>朝向 · {{$value.face}}</p>   
+    {{/each}}
+    {{each result.data.space}}
+    <ul class="room-in">
+        {{each $value.config}}
+        <li>
+            <img src="{{$value.icon}}">
+            <span>{{$value.name}}</span>
+        </li>
+        {{/each}}
+    </ul>
+   {{/each}}
+</div>
+<div class="detail-server">
+    <span>服务介绍</span>
+    <div>查看全部</div>   
+</div>
+<ul class="server-list">
+    {{each result.data.services.detail}}
+    <li>
+        <img src="{{$value.icon}}">
+        <p><span>{{$value.title}} ·</span>{{$value.sub_title}}
+        </p>
+    </li>
+    {{/each}}
+</ul>
+
+<div class="detail-server">
+    <span>小区介绍</span>
+    <div id="resblock">小区详情</div>   
+</div>
+<div class="detail-entr">
+    <ul>
+        <li>{{result.data.resblock.name}}</li>
+        <li>{{result.data.resblock.item[0].name}}：{{result.data.resblock.item[0].value}}</li>
+        <li>{{result.data.resblock.item[1].name}}：{{result.data.resblock.item[1].value}}</li>
+        <li>{{result.data.resblock.item[2].name}}：{{result.data.resblock.item[2].value}}</li>
+    </ul>
+    <img src="{{result.data.photos}}">
+</div>
+
+<div class="detail-server">
+    <span>周边及交通</span>
+    <div>查看介绍</div>   
+</div>
+
+<div class="detail-around">
+    <img src="http://api.map.baidu.com/staticimage/v2?ak=CB9b776692623d30a148b5c5dc2b75a6&mcode=666666&center={{result.data.resblock.lng}},{{result.data.resblock.lat}}&width=800&height=360&zoom=18&markers=116.374708,39.854229&markerStyles=-1,http://api.map.baidu.com/images/marker_red.png,-1,23,25">
+    <ul class="traffic">
+        {{each result.data.resblock.subway}}
+        <li>· {{$value}}</li>
+        {{/each}}
+    </ul>
+</div>
+<div class="detail-server">
+    <span>您的管家</span>  
+</div>
+<div class="detail-people">
+    <div><img src="http://pic.ziroom.com/steward_images/60016825.png"></div>
+    <em>叶志杰</em>
+    <span>联系管家</span>
+</div>
+<p class="people-in">我是自如管家，服务上百位自如客并与他们成为朋友，选择自如选择我，您就选择了舒心选择了安心！</p>
+
+<div class="detail-server">
+    <span>常见问题</span>  
+</div>
+
+<ul class="detail-problem">
+    <li>
+        <p>退租怎么办理？哪些情况会扣费？</p>
+        <a class="show-popup">查看</a>
+    </li>
+    <li>
+        <p>从哪些方面关注空气质量？</p>
+        <a class="show-popup">查看</a>
+    </li>
+    <li>
+        <p>房子到期续约的话，有什么优惠？</p>
+        <a class="show-popup">查看</a>
+    </li>
+</ul>
+
+<div class="detail-server">
+    <span>为你推荐</span>  
+</div>
+<ul class="detail-guess">
+
+</ul>

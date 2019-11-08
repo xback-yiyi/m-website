@@ -1,0 +1,19 @@
+<div class="indexContainer">
+    <header>
+    </header>
+    
+    <main>
+        <div class="list-containter">
+            <ul></ul>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li data-to="ziru">首页</li>
+            <li data-to="search" class="active">搜索</li>
+            <li data-to="my">我的</li>
+        </ul>
+    </footer>
+    
+</div>

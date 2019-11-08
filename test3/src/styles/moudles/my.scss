@@ -1,0 +1,52 @@
+.my-login{
+    >div{
+        display: inline-block;
+        width: 1.5rem;
+        height: .5rem;
+        @include border(1px,#eee);
+        color: #999;
+        margin: 1rem .16rem 1rem .18rem;
+        padding: .1rem;
+        font-size: 20px;
+        text-align: center;
+        line-height: .3rem;
+        background: #f9f9f9;
+    }
+    .active{
+        color:#ffa000;
+    }
+}
+.my-text1{
+    display: none;
+}
+.my-text2{
+    display: none;
+    p{
+        display: none;
+        margin-top: -.21rem;
+        em{
+            color: #ffa000;
+        }
+    }
+}
+.my-show{
+    display: block;
+    margin:.1rem .16rem;
+    input{
+        width: 3.4rem;
+        height: .4rem;
+        margin-bottom: .25rem;
+    }
+}
+
+.my-submit{
+    display: block;
+    width: 3.4rem;
+    height: .5rem;
+    margin: .2rem 0;
+    font-size: 20px;
+    text-align: center;
+    line-height: .5rem;
+    background: #eee;
+}
+
